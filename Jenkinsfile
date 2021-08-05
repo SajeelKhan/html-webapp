@@ -21,7 +21,9 @@ agent any
         stage ('Deploy') { 
             steps{
                 echo 'This is Deploy stage'
-                sh 'scp index.html /var/www/sajeel-pipeline'
+                sh 'cd /var/www/sajeel-pipeline'
+                sh 'rm index.html'
+                sh 'cp index.html /var/www/sajeel-pipeline'
             }
         }         
     }           
