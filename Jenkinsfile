@@ -1,10 +1,6 @@
 pipeline { 
 agent any 
 
-    tools{
-        nodejs 'node-16'
-    }
-
     stages { 
         stage ('Build') { 
             steps {
@@ -14,7 +10,7 @@ agent any
         }
         stage ('Test') { 
             steps {
-                echo 'This is Test stage'
+                echo 'This is Testing stage'
             }
         
         }
