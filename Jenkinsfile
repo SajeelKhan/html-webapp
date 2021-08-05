@@ -21,6 +21,7 @@ agent any
         stage ('Deploy') { 
             steps{
                 echo 'This is Deploy stage'
+                sh 'rm  -r /var/www/sajeel-pipeline'
                 sh 'cp index.html /var/www/sajeel-pipeline'
             }
         }         
