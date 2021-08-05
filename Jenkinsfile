@@ -22,7 +22,7 @@ agent any
             steps{
                 echo 'This is Deploy stage'
                 sh 'rm  /var/www/sajeel-pipeline/index.html'
-                sh 'cp index.html /var/www/sajeel-pipeline'
+                sh 'scp index.html /var/www/sajeel-pipeline'
             }
         }         
     }           
